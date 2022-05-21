@@ -9,6 +9,7 @@ import myProfile from "../../img/profile_kanak.jpg";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
+import FloatingDiv from '../FloatingDiv/FloatingDiv'
 
 
 function Intro() {
@@ -42,8 +43,16 @@ function Intro() {
     <img src={Vector1} alt="vector-1"/>
     <img src={Vector2} alt="vertor-2"/>
     <img src={myProfile} alt="my-photo" className='i-my_profile'/>
-    <div>
-    <FloatingDiv/>
+    <img src={glassesimoji} alt=""/>
+    <div style={{top: '-4%', left: '68%'}}>
+    <FloatingDiv image={crown} txt1='Web' txt2="Developer"/>
+    </div>
+    <div style={{top: "80%"}}>
+    <FloatingDiv image={thumbup} txt1='Using Reactjs' txt2="& Nextjs"/>
+    </div>
+    <div className='blur' style={{background: "rgb(238 210 255)"}}>
+    </div>
+    <div className='blur' style={{background: "#C1F5FF",top:"17rem",width:'21rem',height: "11rem",left:"-9rem"}}>
     </div>
     </div>
    </div>
