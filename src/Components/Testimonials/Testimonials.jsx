@@ -45,7 +45,7 @@ function Testimonials() {
   return (
     <div className='t-wrapper'>
         <div className="t-heading"> 
-          <span>Linked Recommedation</span>
+          <span>LinkedIn Recommedation</span>
           <span> Given By </span>
           <span> colleague</span>
           <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
