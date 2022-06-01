@@ -6,10 +6,12 @@ import Zwayam from '../../img/zwayam_mark.png'
 import HeartEmoji from "../../img/heartemoji.png"
 import Glasses from "../../img/glasses.png"
 import Humble from "../../img/humble.png"
+import { ThemeContext } from "../../Context";
 
 const Works = () => {
 
-
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   // transition
   return (
     <div className="works" id="works">
@@ -17,7 +19,7 @@ const Works = () => {
       <div className="w-left">
         <div className="awesome">
           {/* dark Mode */}
-          <span >
+          <span style={{color : darkMode ? 'white' : ''}} >
             Worked & Working for 
           </span>
           <span>Zwayam & Melorra</span>
