@@ -9,7 +9,7 @@ function Portfolio() {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className='portfolio'>
+    <div className='portfolio' id="Portfolio">
         <span style={{color: darkMode? 'white' :""}}>Recent Projects </span>
         <span>Portfolio</span>
         <Swiper 
