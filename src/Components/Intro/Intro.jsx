@@ -11,9 +11,11 @@ import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import { ThemeContext } from '../../Context'
+import {motion} from 'framer-motion'
 
 
 function Intro() {
+  const transition= {duration : 2, type: 'spring'};
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -46,13 +48,25 @@ function Intro() {
     <img src={Vector1} alt="vector-1"/>
     <img src={Vector2} alt="vertor-2"/>
     <img src={myProfile} alt="my-photo" className='i-my_profile'/>
-    <img src={glassesimoji} alt=""/>
-    <div style={{top: '-4%', left: '68%'}}>
+    <motion.img 
+    initial={{left: '-36%'}}
+    whileInView={{left: '-24%'}}
+    transition={transition} 
+    src={glassesimoji} alt=""/>
+    <motion.div
+    initial={{top: '-4%', left: '74%'}}
+    whileInView={{left: '68%'}}
+    transition={transition}
+     style={{top: '-4%', left: '68%'}}>
     <FloatingDiv image={crown} txt1='Web' txt2="Developer"/>
-    </div>
-    <div style={{top: "80%"}}>
+    </motion.div>
+    <motion.div 
+    initial={{top: '80%',left: "10rem"}}
+    whileInView={{top : '80%', left: '0rem'}}
+    transition={transition}
+    style={{top: "80%"}}>
     <FloatingDiv image={thumbup} txt1='Using Reactjs' txt2="& Nextjs"/>
-    </div>
+    </motion.div>
     <div className='blur' style={{background: "rgb(238 210 255)"}}>
     </div>
     <div className='blur' style={{background: "#C1F5FF",top:"17rem",width:'21rem',height: "11rem",left:"-9rem"}}>
