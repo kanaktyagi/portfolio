@@ -7,6 +7,7 @@ import HeartEmoji from "../../img/heartemoji.png"
 import Glasses from "../../img/glasses.png"
 import Humble from "../../img/humble.png"
 import { ThemeContext } from "../../Context";
+import { motion } from "framer-motion";
 
 const Works = () => {
 
@@ -48,27 +49,32 @@ const Works = () => {
         {/* right side */}
       </div>
       <div className="w-right">
-      <div className="w-mainCircle">
-        <div className="w-secCircle">
-          <img src={melorra} alt="" className="w-image" style={{transform: "scale(1.1)"}} />
-        </div>
-        <div className="w-secCircle">
-          <img src={Zwayam} alt="" className="w-image" />
-        </div>
-        <div className="w-secCircle">
-        <img src={HeartEmoji} alt="" className="w-image" />
-      </div>
-      <div className="w-secCircle">
-      <img src={Glasses} alt="" className="w-image" />
-    </div>
-    <div className="w-secCircle">
-    <img src={Humble} alt="" className="w-image" />
-  </div>
+         <motion.div className="w-mainCircle"
+         initial={{ rotate: 45 }}
+         whileInView={{ rotate: 0 }}
+         viewport={{ margin: "-40px" }}
+         transition={{ duration: 3.5, type: "spring" }}
+               >
+              <div className="w-secCircle">
+                <img src={melorra} alt="" className="w-image" style={{transform: "scale(1.1)"}} />
+              </div>
+          <div className="w-secCircle">
+               <img src={Zwayam} alt="" className="w-image" />
+              </div>
+             <div className="w-secCircle">
+                 <img src={HeartEmoji} alt="" className="w-image" />
+              </div>
+             <div className="w-secCircle">
+                 <img src={Glasses} alt="" className="w-image" />
+             </div>
+            <div className="w-secCircle">
+             <img src={Humble} alt="" className="w-image" />
+             </div>
        
-      </div>
-      {/* background Circles */}
-      <div className="w-backCircle blueCircle"></div>
-      <div className="w-backCircle yellowCircle"></div>
+           </motion.div>
+        {/* background Circles */}
+           <div className="w-backCircle blueCircle"></div>
+             <div className="w-backCircle yellowCircle"></div>
     </div>
   </div>
   );
