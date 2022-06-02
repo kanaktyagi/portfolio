@@ -31,14 +31,14 @@ function Testimonials() {
           name: 'Khushbu kumari',
           profileLink: "https://www.linkedin.com/in/khushbu-k-46b50a198/",
           review:
-            "Kanak is passionate about writing code and solving clients’ problems through the development of creative and innovative software. She is detail oriented and rarely has any bugs in his finished product and dedicated to providing quality work.",
+            "Kanak is passionate about writing code and solving clients problems through the development of creative and innovative software. She is detail oriented and dedicated to providing quality work.",
         },
         {
           img: profilePic4,
           name:"Kumar Aditya",
           profileLink: "https://www.linkedin.com/in/kumar-aditya-8577b6104/",
           review:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+            "Kanak is very hard-working and career-oriented girl. She is a good team player.",
         },
       ];
 
@@ -66,7 +66,7 @@ function Testimonials() {
         <img src={client.img} alt="profile_photo" className='t_imagestyle'/>
         </a>
         <p>{client.name}</p>
-        <span>{client.review}</span>
+        <span style={{marginTop:"-19px"}}>{client.review}</span>
         </div>
         </SwiperSlide>
       
