@@ -12,7 +12,7 @@ import crown from "../../img/crown.png";
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import { ThemeContext } from "../../Context";
 import { motion } from "framer-motion";
-
+import {Link} from 'react-scroll';
 function Intro() {
   const transition = { duration: 2, type: "spring" };
   const theme = useContext(ThemeContext);
@@ -28,7 +28,9 @@ function Intro() {
             web development
           </span>
         </div>
+        <Link spy={true} to="Contact" smooth={true}>
         <button className="button i-button">Hire Me</button>
+        </Link>
         <div className="i-icons">
           <a
             href="https://github.com/kanaktyagi?tab=repositories"

@@ -8,6 +8,7 @@ import Glasses from "../../img/glasses.png"
 import Humble from "../../img/humble.png"
 import { ThemeContext } from "../../Context";
 import { motion } from "framer-motion";
+import {Link} from 'react-scroll'
 
 const Works = () => {
 
@@ -39,7 +40,9 @@ const Works = () => {
             <br/>
             <a href="https://www.melorra.com/" target="_blank"> Melorra website link</a>
           </span>
+          <Link spy={true} to="Contact" smooth={true}>
             <button className="button s-button">Hire Me</button>
+            </Link>
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}

@@ -31,9 +31,11 @@ function Navbar() {
           </Link>
          </ul>
          </div>
+         <Link spy={true} to="Contact" smooth={true}>
          <button className="button n-button">
          Contact
        </button>
+       </Link>
         </div>
     </div>
   )
