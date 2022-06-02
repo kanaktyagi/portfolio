@@ -41,6 +41,10 @@ textarea{
     top: 1rem;
     left: 8rem;
 }
+.c_style{
+    cursor: pointer;
+
+}
 
 @media screen and (max-width: 480px) {
     .contact-form{
