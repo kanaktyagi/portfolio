@@ -24,14 +24,14 @@ function Testimonials() {
           name: "Atul Singh",
           profileLink: "https://www.linkedin.com/in/atul-singh-90572474/",
           review:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+            "I know Kanak as a hard working and very serious team player. Kanak is very passionate and has great vision for her work, and certainly can get my full recommendation.",
         },
         {
           img: profilePic3,
           name: 'Khushbu kumari',
           profileLink: "https://www.linkedin.com/in/khushbu-k-46b50a198/",
           review:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
+            "Kanak is passionate about writing code and solving clients’ problems through the development of creative and innovative software. She is detail oriented and rarely has any bugs in his finished product and dedicated to providing quality work.",
         },
         {
           img: profilePic4,
