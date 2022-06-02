@@ -18,7 +18,7 @@ function Navbar() {
           <li>Home</li>
           </Link>
           <Link spy={true} to='Services' smooth={true} >
-          <li>Services</li>
+          <li>Skillset</li>
           </Link>
           <Link spy={true} to='Experience' smooth={true} >
           <li>Experience</li>

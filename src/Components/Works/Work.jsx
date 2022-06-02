@@ -39,8 +39,14 @@ const Works = () => {
             on-line and offline.
             <br/>
             <a href="https://www.melorra.com/" target="_blank"> Melorra website link</a>
+            <p/>
+            I continuously try to updrage my skills so here is my repository link where I keep <br/>
+            all my projects.
+            <br/>
+            <a href="https://github.com/kanaktyagi?tab=repositories" target="_blank">Git repository link</a>
           </span>
-          <Link spy={true} to="Contact" smooth={true}>
+         
+        <Link spy={true} to="Contact" smooth={true}>
             <button className="button s-button">Hire Me</button>
             </Link>
           <div

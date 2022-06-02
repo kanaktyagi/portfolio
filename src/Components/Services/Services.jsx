@@ -17,8 +17,8 @@ function Services() {
   return (
   <div className="services" id='Services'>
     <div className="awesome">  
-        <span style={{color: darkMode ? 'white' : ''}}>My Awesome</span>
-        <span>services</span>
+        <span style={{color: darkMode ? 'white' : ''}}> My awesome </span>
+        <span>Skillset</span>
         <span>Currently working for Melorra as a frontend developer
         <br/>
         Migrated the existing code to Nextjs with Reactjs for better seo and
