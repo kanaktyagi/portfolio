@@ -47,8 +47,8 @@ const Contact = () => {
       {/* right side form */}
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" className="user"  placeholder="Your Name"/>
-          <input type="email" name="user_email" className="user" placeholder="Your Email"/>
+          <input type="text" name="from_name" className="user"  placeholder="Your Name"/>
+          <input type="email" name="from_email" className="user" placeholder="Your Email"/>
           <textarea name="message" className="user" placeholder="Your Message"/>
           <input type="submit" value="Send" className="button c_style"/>
           <span>{done && "Thanks for Contacting me"}</span>
