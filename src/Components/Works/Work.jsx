@@ -40,7 +40,7 @@ const Works = () => {
             <br/>
             <a href="https://www.melorra.com/" target="_blank"> Melorra website link</a>
             <p/>
-            I continuously try to updrage my skills so here is my repository link where I keep <br/>
+            I continuously try to upgrade my skills so here is my repository link where I keep <br/>
             all my projects.
             <br/>
             <a href="https://github.com/kanaktyagi?tab=repositories" target="_blank">Git repository link</a>
